@@ -19,6 +19,6 @@ def create_map(gpx_path, output_html="route_map.html"):
     # mark the end point
     folium.Marker(location=coordinates[-1], popup="End", icon=folium.Icon(color='red')).add_to(fmap)
 
-    # save the map to html
+    # save the map to html new
     fmap.save(output_html)
     print(f"✅ 地圖已儲存：{output_html}")
